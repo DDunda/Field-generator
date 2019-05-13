@@ -207,6 +207,15 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "Tools/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp2.0/Tools.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/Tools.dll": {}
+        }
       }
     }
   },
@@ -680,30 +689,43 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "Tools/1.0.0": {
+      "sha512": "iKQcrO+4Rgpf4BzMZFWbi/GCZSi1lkGq9A/BaGbKyHk6GEy0dqnhdFRhvKAhZsixFe+r3768836WjPJOndZeKQ==",
+      "type": "package",
+      "path": "tools/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        "lib/netcoreapp2.0/Tools.dll",
+        "tools.1.0.0.nupkg.sha512",
+        "tools.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "Microsoft.NETCore.App >= 2.1.0"
+      "Microsoft.NETCore.App >= 2.1.0",
+      "Tools"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\New\\.nuget\\packages\\": {},
+    "./References/packages": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\New\\Desktop\\Documents\\Programming\\unity\\Fields\\Fields.csproj",
+      "projectUniqueName": "C:\\Users\\New\\Desktop\\Documents\\Programming\\Github\\Field generator\\Field-generator\\Fields.csproj",
       "projectName": "Fields",
-      "projectPath": "C:\\Users\\New\\Desktop\\Documents\\Programming\\unity\\Fields\\Fields.csproj",
+      "projectPath": "C:\\Users\\New\\Desktop\\Documents\\Programming\\Github\\Field generator\\Field-generator\\Fields.csproj",
       "packagesPath": "C:\\Users\\New\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\New\\Desktop\\Documents\\Programming\\unity\\Fields\\obj\\",
+      "outputPath": "C:\\Users\\New\\Desktop\\Documents\\Programming\\Github\\Field generator\\Field-generator\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
+        "C:\\Users\\New\\Desktop\\Documents\\Programming\\Github\\Field generator\\Field-generator\\NuGet.Config",
         "C:\\Users\\New\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -712,6 +734,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Users\\New\\Desktop\\Documents\\Programming\\Github\\Field generator\\Field-generator\\./References": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -732,6 +755,10 @@
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
+          },
+          "Tools": {
+            "target": "Package",
+            "version": "(, )"
           }
         },
         "imports": [
