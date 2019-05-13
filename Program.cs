@@ -7,7 +7,6 @@ namespace Fields
 	{
 		static void Main(string[] args)
 		{
-
 		}
 	}
 	abstract class BasicPoint
