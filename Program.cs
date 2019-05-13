@@ -26,11 +26,11 @@ namespace Fields
 		}
 		public override double GetForceMagnitude(Vector2 position2)
 		{
-			return magnitude / (position - position2).sqrMagnitude;
+			return magnitude / (position - position2).sqrSize;
 		}
 		public override Vector2 GetVectorForce(Vector2 position2)
 		{
-			return this.GetForceMagnitude(position2) * (this.position - position2).normalised;
+			return (this.position - position2).normalised * this.GetForceMagnitude(position2);
 		}
 	}
 }

@@ -1,0 +1,4 @@
+C:\Users\New\Desktop\Documents\Programming\Github\Field generator\Field-generator\obj\Debug\netcoreapp2.1\Fields.csprojAssemblyReference.cache
+C:\Users\New\Desktop\Documents\Programming\Github\Field generator\Field-generator\obj\Debug\netcoreapp2.1\Fields.csproj.CoreCompileInputs.cache
+C:\Users\New\Desktop\Documents\Programming\Github\Field generator\Field-generator\obj\Debug\netcoreapp2.1\Fields.AssemblyInfoInputs.cache
+C:\Users\New\Desktop\Documents\Programming\Github\Field generator\Field-generator\obj\Debug\netcoreapp2.1\Fields.AssemblyInfo.cs
