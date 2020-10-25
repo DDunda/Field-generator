@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Fields": {
+      "commandName": "Project",
+      "commandLineArgs": "source:.\\Points.ps windowWidth:2.5 windowHeight:2.5 imageWidth:500 imageHeight:500 logFactor:0.00000000001"
+    }
+  }
+}
