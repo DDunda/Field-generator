@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Joy0uid6TyzNYJjzbG/dhfGoSDmC8E91kqBjOpAfMJ0ZnEWIYdTP31hQmBX5fieTwbXxYC1mThPF+2S9UHWA/A==",
+  "success": true,
+  "projectFilePath": "D:\\NewDesktop\\Programming\\Github\\Field Generator\\Fields\\Fields.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\New\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\New\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\New\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
