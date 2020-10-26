@@ -69,7 +69,46 @@ namespace Fields
 
 		void renderAscii()
 		{
+			UInt32 width = (UInt32)settings.imageSize.x;
+			UInt32 height = (UInt32)settings.imageSize.y;
 
+			char[][] forcefield = new char[height][];
+
+			double section = 2 * Math.PI / 16;
+
+			for (int y = 0; y < height; y++)
+			{
+				forcefield[y] = new char[width];
+				for (int x = 0; x < width; x++)
+				{
+					Vector2 pos = MapPoint(new Vector2(x, y));
+					Vector2 force = GetForceAtPoint(pos).normalised;
+
+					char line = '.';
+					if (force.size > 0)
+					{
+						double angle = Math.Atan2(force.y, force.x);
+
+						line = '←';
+
+						     if (angle >= -7 * section && angle < -5 * section) line = '↙';
+						else if (angle >= -5 * section && angle < -3 * section) line = '↓';
+						else if (angle >= -3 * section && angle < -1 * section) line = '↘';
+						else if (angle >= -1 * section && angle <  1 * section) line = '→';
+						else if (angle >=  1 * section && angle <  3 * section) line = '↗';
+						else if (angle >=  3 * section && angle <  5 * section) line = '↑';
+						else if (angle >=  5 * section && angle <  7 * section) line = '↖';
+
+					}
+					forcefield[y][x] = line;
+				}
+			}
+
+			string[] lines = new string[height];
+			for (int y = 0; y < height; y++) lines[y] = new string(forcefield[y]);
+
+			string outputPath = $@"{settings.saveLocation}\Output.txt";
+			EasyIO.Write(outputPath, lines);
 		}
 
 		void renderImage()
